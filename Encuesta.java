@@ -96,7 +96,6 @@ public class Encuesta {
         {
             JOptionPane.showMessageDialog(null,"Vuela a intentarlo introduciendo un valor valido");
         }
-
     }
     
 }
