@@ -10,7 +10,7 @@ public class Encuesta {
         opcion = JOptionPane.showInputDialog("Generalmente, ¿que tipo de textos disfruta mas? \nEscriba R para indicar que realistas o escriba F para indicar que ficticios.").charAt(0);
         if (opcion == 'R' || opcion == 'r')//Lo que pasa si elige un texto realista
         {
-            opcion = JOptionPane.showInputDialog("¿Por que tipo de texto se siente mas atraido? Algo que trate acerca de historia(escriba H), \nUna novela sencilla(escriba N) o un texto cientifico(Escriba C)").charAt(0);
+            opcion = JOptionPane.showInputDialog("¿Por que tipo de texto se siente mas atraido? Algo que trate acerca de historia(escriba H), \nUna novela(escriba N) o un texto cientifico(Escriba C)").charAt(0);
             if (opcion == 'H' ||  opcion == 'h')//Lo que  pasa si elige historico
             {
                 opcion = JOptionPane.showInputDialog("¿Prefiere la biografia de una persona(Escriba P) o la historia de algun lugar en general (Escriba G)\n o alguna guerra famosa (Escriba W)").charAt(0);
@@ -32,7 +32,7 @@ public class Encuesta {
             }//Terminan los libros hsitoricos
             else if (opcion == 'N' || opcion == 'n')//Lo que pasa si elige novela sencilla
             {
-                opcion = JOptionPane.showInputDialog("Prefiere las novelas juveniles (Escriba J) o prefiere las novelas romanticas(Escriba R)").charAt(0);
+                opcion = JOptionPane.showInputDialog("Prefiere las novelas juveniles (Escriba J)\n o prefiere las novelas romanticas(Escriba R)").charAt(0);
                 if (opcion == 'J' || opcion == 'j')//Lo que pasa si elige una novela juvenil
                 {
                     //RECOMENDACION NOVELA JUVENIL
@@ -46,7 +46,7 @@ public class Encuesta {
             }//Terminan las novelas
             else if (opcion == 'C' || opcion == 'c' )//Lo que pasa si elige textos cientificos
             {
-                opcion = JOptionPane.showInputDialog("A la hora de leer un texto cientifico, lo prefiere relacionado a la biologia(Escriba B), relacionado a la física (Escriba F) o relacionado a la Astronomia(Escriba A)").charAt(0);
+                opcion = JOptionPane.showInputDialog("A la hora de leer un texto cientifico, lo prefiere relacionado a la biologia(Escriba B),\n relacionado a la física (Escriba F) o relacionado a la Astronomia(Escriba A)").charAt(0);
                 if (opcion == 'B' || opcion == 'b')//Lo que pasa si eligio Biologia
                 {
                     //RECOMENDACION LIBRO DE BIOLOGIA
@@ -66,7 +66,7 @@ public class Encuesta {
         }//Terminan los textos realistas
         else if (opcion == 'F' || opcion == 'f')//Lo que pasa si elige un texto ficticio
         {
-            opcion = JOptionPane.showInputDialog("¿Usted prefiere las historias de terror(Escriba T), la ciencia ficcion(Escriba C) o las historias de fantasia(Escriba F)").charAt(0);
+            opcion = JOptionPane.showInputDialog("¿Usted prefiere las historias de terror(Escriba T), la ciencia ficcion(Escriba C)\n o las historias de fantasia(Escriba F)").charAt(0);
             if (opcion == 'F' || opcion == 'f')//Lo que pasa si elige fantasia
             {
                 opcion = JOptionPane.showInputDialog("¿Prefiere las travesias de fantasia(Escriba T) o los cuentos de fantasia(Escriba C)?").charAt(0);
@@ -88,7 +88,7 @@ public class Encuesta {
             }//Termina terror
             else if (opcion == 'C' || opcion == 'c')//Lo que pasa si elige ciencia ficcion
             {
-                opcion = JOptionPane.showInputDialog("¿Le gusta lo relacionado a la tecnologia (Escriba T), o si le gusta lo relacionado con viajes espaciales (Escriba E) o si le gustan los mundos post-apocalipticos (Escriba P)").charAt(0);
+                opcion = JOptionPane.showInputDialog("¿Le gusta lo relacionado a la tecnologia (Escriba T), o si le gusta lo relacionado con viajes espaciales (Escriba E)\n o si le gustan los mundos post-apocalipticos (Escriba P)").charAt(0);
                 if (opcion == 'T' || opcion == 't')//Lo que pasa si eligio tecnologia
                 {
                     //RECOMENDACIONES DE LIBROS DE CIENCIA FICCION DE TECNOLOGIA
