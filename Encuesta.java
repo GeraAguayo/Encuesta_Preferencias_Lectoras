@@ -6,7 +6,7 @@ public class Encuesta {
         char opcion;
 
         //Se inicia preguntandole al usuario que tipo de textos prefiere
-        JOptionPane.showMessageDialog(null, "Hola!, en este cuestionario se le recomendara una serie de libro basado en sus gustos.\n Por favor, en cada pregunta solo elija una opcion.");
+        JOptionPane.showMessageDialog(null, "Hola! , en este cuestionario se le recomendara una serie de libros basado en sus gustos.\n Por favor, en cada pregunta solo elija una opcion.");
         opcion = JOptionPane.showInputDialog("Generalmente, ¿que tipo de textos disfruta mas? \nEscriba R para indicar que realistas o escriba F para indicar que ficticios.").charAt(0);
         if (opcion == 'R' || opcion == 'r')//Lo que pasa si elige un texto realista
         {
