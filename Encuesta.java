@@ -73,15 +73,18 @@ public class Encuesta {
                 if (opcion == 'T' || opcion == 't')//Lo que pasa si elige travesias de fantasia
                 {
                     //RECOMENDACIONES DE LIBROS DE TRAVESIA FANTASTICA
+                    System.out.println("Libros de travesia fantastica");
                 }
                 else if (opcion == 'C' || opcion == 'c')//Lo  que pasa si elige cuentos
                 {
                     //RECOMENDACIONES DE CUENTOS DE FANTASIA
+                    System.out.println("Cuentos de fantasia");
                 }
             }//Termina fantasia
             else if (opcion == 'T' || opcion == 't')//Lo que pasa si elige terror
             {
                 //RECOMENDACIONES DE LIBROS DE TERROR
+                System.out.println("Libro de terror");
             }//Termina terror
             else if (opcion == 'C' || opcion == 'c')//Lo que pasa si elige ciencia ficcion
             {
@@ -89,14 +92,17 @@ public class Encuesta {
                 if (opcion == 'T' || opcion == 't')//Lo que pasa si eligio tecnologia
                 {
                     //RECOMENDACIONES DE LIBROS DE CIENCIA FICCION DE TECNOLOGIA
+                    System.out.println("Libro ciencia ficcion tecnologia");
                 }
                 else if (opcion == 'E' || opcion == 'e')//Lo que pasa si elige viajes espaciales
                 {
                     //RECOMENDACIONES DE LIBROS DE CIENCIA FICCION DE VIAJES ESPACIALES
+                    System.out.println("Libro ciencia ficcion viajes espaciales");
                 }
                 else if(opcion == 'P' || opcion == 'p')//Lo que pasa si elige mundos post-apocalipticos
                 {
                     //RECOMENDACION LIBROS CIENCIA FICCION POST-APOCALIPTICOS
+                    System.out.println("Libro ciencia ficcion post.apocaliptico");
                 }
             }//Termina ciencia ficcion
         }
