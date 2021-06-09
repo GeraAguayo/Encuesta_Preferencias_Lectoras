@@ -6,25 +6,28 @@ public class Encuesta {
         char opcion;
 
         //Se inicia preguntandole al usuario que tipo de textos prefiere
-        JOptionPane.showMessageDialog(null, "Hola!, en este cuestionario se le recomendara una serie de libro basado en sus gustos. Por favor, en cada pregunta solo elija una opcion.");
-        opcion = JOptionPane.showInputDialog("Generalmente, ¿que tipo de textos disfruta mas? Escriba R para indicar que realistas o escriba F para indicar que ficticios.").charAt(0);
+        JOptionPane.showMessageDialog(null, "Hola!, en este cuestionario se le recomendara una serie de libro basado en sus gustos.\n Por favor, en cada pregunta solo elija una opcion.");
+        opcion = JOptionPane.showInputDialog("Generalmente, ¿que tipo de textos disfruta mas? \nEscriba R para indicar que realistas o escriba F para indicar que ficticios.").charAt(0);
         if (opcion == 'R' || opcion == 'r')//Lo que pasa si elige un texto realista
         {
-            opcion = JOptionPane.showInputDialog("¿Por que tipo de texto se siente mas atraido? Algo que trate acerca de historia(escriba H), Una novela sencilla(escriba N) o un texto cientifico(Escriba C)").charAt(0);
+            opcion = JOptionPane.showInputDialog("¿Por que tipo de texto se siente mas atraido? Algo que trate acerca de historia(escriba H), \nUna novela sencilla(escriba N) o un texto cientifico(Escriba C)").charAt(0);
             if (opcion == 'H' ||  opcion == 'h')//Lo que  pasa si elige historico
             {
-                opcion = JOptionPane.showInputDialog("¿Prefiere la biografia de una persona(Escriba P) o la historia de algun lugar en general (Escriba G) o alguna guerra famosa (Escriba W)").charAt(0);
+                opcion = JOptionPane.showInputDialog("¿Prefiere la biografia de una persona(Escriba P) o la historia de algun lugar en general (Escriba G)\n o alguna guerra famosa (Escriba W)").charAt(0);
                 if (opcion == 'P' || opcion == 'p')//Lo que pasa si elige biografia
                 {
                     //RECOMENDACION DE LAS BIOGRAFIAS
+                    System.out.println("Biografia");
                 }
                 else if (opcion == 'G' || opcion == 'g')//Lo que pasa se elige historia en general
                 {
                     //RECOMENDACION DE HISTORIA EN GENERAL
+                    System.out.println("Historia en general");
                 }
                 else if (opcion  == 'W' || opcion == 'w')//Lo que pasa si elige guerra
                 {
                     //RECOMENDACION DE LIBROS DE GUERRA HISTORICOS
+                    System.out.println("Guerra");
                 }
             }//Terminan los libros hsitoricos
             else if (opcion == 'N' || opcion == 'n')//Lo que pasa si elige novela sencilla
@@ -33,10 +36,12 @@ public class Encuesta {
                 if (opcion == 'J' || opcion == 'j')//Lo que pasa si elige una novela juvenil
                 {
                     //RECOMENDACION NOVELA JUVENIL
+                    System.out.println("Novela juvenil");
                 }
                 else if (opcion == 'R' || opcion == 'r')//Lo que pasa si elige novelas romanticas
                 {
                     //RECOMENDACION DE NOVELAS ROMANTICAS
+                    System.out.println("Novelas romanticas");
                 }
             }//Terminan las novelas
             else if (opcion == 'C' || opcion == 'c' )//Lo que pasa si elige textos cientificos
@@ -45,14 +50,17 @@ public class Encuesta {
                 if (opcion == 'B' || opcion == 'b')//Lo que pasa si eligio Biologia
                 {
                     //RECOMENDACION LIBRO DE BIOLOGIA
+                    System.out.println("Libro de biologia");
                 }
                 else if(opcion == 'F' || opcion == 'f')//Lo que pasa si elige fisica
                 {
                     //RECOMENDACION LIBRO DE FISICA
+                    System.out.println("Libro de fisica");
                 }
                 else if (opcion == 'A' || opcion == 'a')
                 {
                     //RECOMENDACION LIBRO DE ASTRONOMIA
+                    System.out.println("Libro de Astronomia");
                 }
             }//Terminan los textos cientificos
         }//Terminan los textos realistas
