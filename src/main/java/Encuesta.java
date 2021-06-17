@@ -4,6 +4,7 @@ public class Encuesta {
     public static void main(String[]args)
     {
         char opcion;
+        //pis
 
         //Se inicia preguntandole al usuario que tipo de textos prefiere
         JOptionPane.showMessageDialog(null, "¡Hola! En este cuestionario se le recomendará una serie de libros basados en sus gustos.\n Por favor, en cada pregunta solo elija una opción.");
