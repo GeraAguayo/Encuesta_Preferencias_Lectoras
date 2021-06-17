@@ -13,12 +13,12 @@ public class Main {
         x = JOptionPane.showOptionDialog(null,"¿Que tipos de texto prefiere mas? ","Elija una de las dos opciones",0,JOptionPane.QUESTION_MESSAGE, null,opciones,"");
         if (x == 0)//Lo que pasa si elige un texto realista
         {
-            String[]realistas = {"Uno que trate sobre historia", "Un texto cientifico", "Una novela"};
+            String[]realistas = {"Uno que trate sobre historia", "Un texto científico", "Una novela"};
             x = JOptionPane.showOptionDialog(null,"¿Por qué tipo de texto se siente más atraído?", "Elija una de las tres opciones",0,JOptionPane.QUESTION_MESSAGE,null,realistas,"");
             if (x == 0)//Lo que pasa si elige uno que trate sobre historia
             {
-                String[]historia = {"La biografia de una persona","La historia de algun lugar o civilizacion","Que trate sobre alguna guerra"};
-                x = JOptionPane.showOptionDialog(null,"¿Que tematica se le hace mas interesante?", "Elija una de las tres opciones",0,JOptionPane.QUESTION_MESSAGE,null,historia,"");
+                String[]historia = {"La biografía de una persona","La historia de algún lugar o civilización","Que trate sobre alguna guerra"};
+                x = JOptionPane.showOptionDialog(null,"¿Que temática se le hace mas interesante?", "Elija una de las tres opciones",0,JOptionPane.QUESTION_MESSAGE,null,historia,"");
                 if (x == 0)//Lo que pasa si elige biografia
                 {
                     //RECOMENDACION DE LAS BIOGRAFIAS
@@ -37,7 +37,7 @@ public class Main {
             }
             else if (x == 1)//Lo que pasa si elige un texto cientifico
             {
-                String[]ciencia = {"Biologia", "Fisica", "Astronomia"};
+                String[]ciencia = {"Biología", "Física", "Astronomía"};
                 x = JOptionPane.showOptionDialog(null,"¿Que tematica se le hace mas interesante?", "Elija una de las tres opciones",0,JOptionPane.QUESTION_MESSAGE,null,ciencia,"");
                 if (x == 0)//Lo que pasa si elige biologia
                 {
@@ -58,7 +58,7 @@ public class Main {
             }
             else if(x == 2)//Lo que pasa si elige una novela
             {
-                String[]novelas = {"Juveniles","Romanticas"};
+                String[]novelas = {"Juveniles","Románticas"};
                 x = JOptionPane.showOptionDialog(null,"¿Que tipo de novela se le hace mas interesante?", "Elija una de las dos opciones",0,JOptionPane.QUESTION_MESSAGE,null,novelas,"");
                 if (x == 0)//Lo que pasa si elige novela juvenil
                 {
@@ -74,7 +74,7 @@ public class Main {
         }//Terminan los textos realistas
         else if (x == 1)//Lo que pasa si elige un texto ficticio
         {
-            String[]ficticios = {"Las de terror","Las de ciencia Ficcion","Las historias de fantasia"};
+            String[]ficticios = {"Las de terror","Las de ciencia Ficción","Las historias de fantasía"};
             x = JOptionPane.showOptionDialog(null,"¿Que tipo de historias le gustan mas?", "Elija una de las tres opciones",0,JOptionPane.QUESTION_MESSAGE,null,ficticios,"");
             if (x == 0)//Lo que pasa si elige terror
             {
@@ -83,7 +83,7 @@ public class Main {
             }
             else if (x == 1)//Lo que pasa si elige ciencia ficcion
             {
-                String[]scfi = {"Algo relacionado a la tecnologia","Viajes espaciales","Mundos post-apocalipticos"};
+                String[]scfi = {"Algo relacionado a la tecnología","Viajes espaciales","Mundos post-apocalípticos"};
                 x = JOptionPane.showOptionDialog(null,"¿Que tema le agrada mas?", "Elija una de las tres opciones",0,JOptionPane.QUESTION_MESSAGE,null,scfi,"");
                 if (x == 0)//Lo que pasa si elige tecnologia
                 {
@@ -103,7 +103,7 @@ public class Main {
             }
             else if (x == 2)//Lo que pasa si elige historias de fantasia
             {
-                String[]fantasia = {"Un cuento","Una travesia fantastica"};
+                String[]fantasia = {"Un cuento","Una travesía fantástica"};
                 x = JOptionPane.showOptionDialog(null,"¿Que se le hace mas interesante?", "Elija una de las dos opciones",0,JOptionPane.QUESTION_MESSAGE,null,fantasia,"");
                 if (x == 0)//Lo que pasa si elije un cuento
                 {
