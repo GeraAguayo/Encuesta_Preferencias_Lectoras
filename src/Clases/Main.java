@@ -1,4 +1,5 @@
-import javax.swing.*;
+package Clases;
+import javax.swing.JOptionPane;
 
 public class Main {
     public static void main(String[]args)
@@ -22,17 +23,21 @@ public class Main {
                 if (x == 0)//Lo que pasa si elige biografia
                 {
                     //RECOMENDACION DE LAS BIOGRAFIAS
-                    JOptionPane.showMessageDialog(null, "Le recomiendo los siguientes libros: \n Elon Musk, el creador de tesla,paypal y spacex que anticipa el futuro- por Ashlee Vance, \n No hay vuelta atrás- por Melinda Gates, \n Steve Jobs- por Walter Isacsson, \n Gabriel García Márquez: Una vida- por Gerald Martin, \n Frida Kahlo: Una biografía.- por María Hesse");
+                    Recomendaciones biografia = new Recomendaciones();
+                    JOptionPane.showMessageDialog(null,biografia.getRecomendacionBiografia());
                 }
                 else if (x == 1)
                 {
                     //RECOMENDACION DE HISTORIA EN GENERAL
-                    JOptionPane.showMessageDialog(null, "Le recomiendo los siguientes libros: \n Historia del mundo con los trozos más codiciados- por Fernando Garcés Blázquez \n Historia del mundo sin los trozos aburridos- por Fernando Garcés Blázquez \n La europa de las cinco naciones- por Luis Suárez \n La prehistoria- Cécile Benoist \n Breve historia del mundo- por Ernst H. Gombrich");
+                    Recomendaciones historiaEnGeneral = new Recomendaciones();
+                    JOptionPane.showMessageDialog(null, historiaEnGeneral.getRecomendacionHistoria());
                 }
                 else if (x == 2)
                 {
                     //RECOMENDACION DE LIBROS DE GUERRA HISTORICOS
-                    JOptionPane.showMessageDialog(null, "Le recomiendo los sguientes libros: \n El diario de Anna Frank- por Anna Frank \n Hiroshima- por Jhon Hersey \n Los hornos de Hitler- por Olga Lengyel \n La independencia de México- por Ernesto de la Torre Villar \n El arte de la guerra- por Sun Tzu ");
+                    Recomendaciones guerra = new Recomendaciones();
+                    JOptionPane.showMessageDialog(null, guerra.getRecomendacionGuerra());
+
                 }
             }
             else if (x == 1)//Lo que pasa si elige un texto cientifico
@@ -42,17 +47,20 @@ public class Main {
                 if (x == 0)//Lo que pasa si elige biologia
                 {
                     //RECOMENDACION LIBRO DE BIOLOGIA
-                    JOptionPane.showMessageDialog(null, "Le recomiendo los siguentes libros: \n ¡Que le den a la ciencia! - por Rocio Vidal \n ¡Eureka!: 50 descubrimientos científicos que cambiaron al mundo- por Rocio Vidal \n Biología para Dummies - por René Fester Kratz y Donna Rae Siegfried \n Virus y pandemia- por Ignacio López-Goñi \n ¿Cómo funciona el cerebro?- por Francisco Mora");
+                    Recomendaciones biologia = new Recomendaciones();
+                    JOptionPane.showMessageDialog(null,biologia.getRecomendacionBiologia() );
                 }
                 else if (x == 1)//Lo que pasa si elige fisica
                 {
                     //RECOMENDACION LIBRO DE FISICA
-                    JOptionPane.showMessageDialog(null, "Le recomiendo los siguentes libros: \n ¡Que le den a la ciencia! - por Rocio Vidal \n ¡Eureka!: 50 descubrimientos científicos que cambiaron al mundo- por Rocio Vidal \n El fascinante mundo de la física - por Pablo Vaz \n Física de lo imposible - Michio Kaku \n Física para dummies- por Holzner Steven");
+                    Recomendaciones fisica = new Recomendaciones();
+                    JOptionPane.showMessageDialog(null,fisica.getRecomendacionFisica() );
                 }
                 else if (x == 2)//Lo que pasa si elige astronomia
                 {
                     //RECOMENDACION LIBRO DE ASTRONOMIA
-                    JOptionPane.showMessageDialog(null, "Le recomiendo los siguentes libros: \n ¡Que le den a la ciencia! - por Rocio Vidal \n ¡Eureka!: 50 descubrimientos científicos que cambiaron al mundo- por Rocio Vidal \n La clave secreta del universo- por Lucy & Stephen Hawking \n La teoría del todo - Stephen Hawking \n La naturaleza del espacio y el tiempo - Stephen Hawking & Roger Penrose");
+                    Recomendaciones astronomia = new Recomendaciones();
+                    JOptionPane.showMessageDialog(null, astronomia.getRecomendacionAstronomia());
                 }
 
             }
@@ -63,12 +71,14 @@ public class Main {
                 if (x == 0)//Lo que pasa si elige novela juvenil
                 {
                     //RECOMENDACION NOVELA JUVENIL
-                    JOptionPane.showMessageDialog(null, "Le recomiendo los siguientes libros: \n El inventor de juegos- por Pablo de Santis \n Ciudades de papel- por Jhon Green \n Más extraño que un fanfiction- por Chris Colfer \n Persona Normal- por Benito Taibo \n A los hombres que bese- por Chris Pueyo");
+                    Recomendaciones juvenil = new Recomendaciones();
+                    JOptionPane.showMessageDialog(null,juvenil.getRecomendacionNovelaJuvenil());
                 }
                 else if (x == 1)//Lo que pasa si elige novela romantica
                 {
                     //RECOMENDACION DE NOVELAS ROMANTICAS
-                    JOptionPane.showMessageDialog(null, "Le recomiendo los siguentes libros: \n El amor en los tiempos del cólera — por Gabriel García Márquez \n La Tregua— por Mario Benedetti \n Rayuela — por Julio Cortázar \n Aura — por Carlos Fuentes \n Las intermitencias de la muerte— por José Saramago");
+                    Recomendaciones romanticas = new Recomendaciones();
+                    JOptionPane.showMessageDialog(null,romanticas.getRecomendacionRomantica());
                 }
             }
         }//Terminan los textos realistas
@@ -79,7 +89,8 @@ public class Main {
             if (x == 0)//Lo que pasa si elige terror
             {
                 //RECOMENDACIONES DE LIBROS DE TERROR
-                JOptionPane.showMessageDialog(null, "Le recomiendo los siguientes libros: \n Drácula- por Bram Stoker \n El gato negro- por Edgar Allan Poe \n Relatos escalofriantes- por Roald Dahl \n El club de los lectores criminales- por Carlos García Miranda \n La cabaña- por Natasha Preston");
+                Recomendaciones terror = new Recomendaciones();
+                JOptionPane.showMessageDialog(null,terror.getRecomendacionTerror());
             }
             else if (x == 1)//Lo que pasa si elige ciencia ficcion
             {
@@ -88,17 +99,20 @@ public class Main {
                 if (x == 0)//Lo que pasa si elige tecnologia
                 {
                     //RECOMENDACIONES DE LIBROS DE CIENCIA FICCION DE TECNOLOGIA
-                    JOptionPane.showMessageDialog(null, "Le recomiendo los siguientes libros: \n El chico sin nombre- por Ricardo Zárate \n  Insignia - S.J.Kincaid \n Vortex- S.J.Kincaid \n Catalyst- S.J.Kincaid \nLa naranja mecánica- por Anthony Burges");
+                    Recomendaciones tecnologia = new Recomendaciones();
+                    JOptionPane.showMessageDialog(null,tecnologia.getRecomendacionTecnologia());
                 }
                 else if (x == 1)//Lo que pasa si elige viajes espaciales
                 {
                     //RECOMENDACIONES DE LIBROS DE CIENCIA FICCION DE VIAJES ESPACIALES
-                    JOptionPane.showMessageDialog(null, "Le recomiendo los siguentes libros: \n Star Wars, estrellas perdidas- por Claudia Gray \n La clave secreta del universo- por Lucy & Stephen Hawking \n Guía del autoestopista galáctico- por Douglas Adams \n Cronicas marcianas - por Ray Bradbury \n Las estrellas de mi destino - por Alfred Bester");
+                    Recomendaciones viajes = new Recomendaciones();
+                    JOptionPane.showMessageDialog(null,viajes.getRecomendacionViajesEspaciales());
                 }
                 else if (x == 2)//Lo que pasa si elige mundos post.apocalipticos
                 {
                     //RECOMENDACION LIBROS CIENCIA FICCION POST-APOCALIPTICOS
-                    JOptionPane.showMessageDialog(null, "Le recomiendo los siguientes libros: \n Maze Runner, Correr o morir- por James Dashner \n Maze Runner, Prueba de fuego- por James Dashner \n Fahrenheit 541- por Ray BradBury \n Guerra mundial Z - por Max Brooks \n La noche en la zona M - por Alberto Chimal");
+                    Recomendaciones  postApocalipticos = new Recomendaciones();
+                    JOptionPane.showMessageDialog(null, postApocalipticos.getRecomendacionPostApocaliptico());
                 }
             }
             else if (x == 2)//Lo que pasa si elige historias de fantasia
@@ -108,12 +122,14 @@ public class Main {
                 if (x == 0)//Lo que pasa si elije un cuento
                 {
                     //RECOMENDACIONES DE CUENTOS DE FANTASIA
-                    JOptionPane.showMessageDialog(null, "Le recomiendo los siguientes libros: \n La noche navegable- por Juan Villoro \n Velocidad de los jardines- por Eloy Tizón \n Cuentos- por Ernest Hemingway \n Bestiario - por Julio Cortázar \n Cuentos reunidos- por William Faulker");
+                    Recomendaciones cuento = new Recomendaciones();
+                    JOptionPane.showMessageDialog(null,cuento.getRecomendacionCuento());
                 }
                 else if (x == 1)//Lo que pasa si elige una travesia fantastica
                 {
                     //RECOMENDACIONES DE LIBROS DE TRAVESIA FANTASTICA
-                    JOptionPane.showMessageDialog(null, "Le recomiendo los siguentes libros: \n Harry Potter y la piedra filosofal- por J.K.Rowling \n El señor de los anillos- por J.R.R. Tolkien \n Historias de Terramar- por Úrsula K. Le Guin \n La torre oscura- por Stephen King \n Las crónicas de Narnia- por C.S. Lewis");
+                    Recomendaciones travesia = new Recomendaciones();
+                    JOptionPane.showMessageDialog(null,travesia.getRecomendacionTravesia());
                 }
             }
         }
